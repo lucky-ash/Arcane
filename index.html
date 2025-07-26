@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Watchlist Arcane</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Mi Watchlist Personal</h1>
+  </header>
+
+  <section class="formulario">
+    <h2>Agregar Entrada</h2>
+    <form id="watchlistForm">
+      <input type="text" placeholder="Título" id="titulo" required>
+      <input type="text" placeholder="Tipo (película, serie...)" id="tipo">
+      <input type="text" placeholder="Género (coma separado)" id="genero">
+      <input type="text" placeholder="Estado (visto, viendo, pendiente)" id="estado">
+      <input type="text" placeholder="Enlace de imagen" id="imagen">
+      <textarea placeholder="Sinopsis" id="sinopsis"></textarea>
+      <textarea placeholder="Tu crítica personal" id="critica"></textarea>
+      <input type="number" placeholder="Puntuación (1-10)" id="puntuacion" min="1" max="10">
+      <input type="text" placeholder="Cita favorita" id="cita">
+      <label><input type="checkbox" id="favorito"> ¿Favorito?</label>
+      <button type="submit">Agregar</button>
+    </form>
+  </section>
+
+  <main id="contenedor-tarjetas"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
